@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: green;
+}
+
+#welcome-section {
+    text-align: center;
+    padding-top: 30px;
+}
+
+main {
+    display: grid;
+}
+
+#projects {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+#profile {
+display: grid;    
+    text-align: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+
+#profile-link {
+    text-decoration: none;
+    display: block;    
+    color: black;
+}
+
+@media all and (max-width: 800px) {
+    #navbar 
+    {
+        justify-content: space-around;
+    }
+.tiles {
+    grid-template-columns: 1fr 1fr;
+
+}
+}
+
+@media all and (max-width: 600px) {
+    #navbar {
+        flex-flow: column wrap;
+        padding: 0%;
+        
+    
+    }
+    
+    
+    #navbar a {
+        text-align: center;
+
+    }
+
+}
